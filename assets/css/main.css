@@ -1,0 +1,54 @@
+@import url(header.css);
+@import url(main-content.css);
+
+/* Importing google font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+    background-color: #eaeaea;
+}
+
+dialog {
+    background-color: #eaeaea;
+    position: absolute;
+    z-index: 9;
+    width: 50vw;
+}
+
+
+dialog form {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+form input {
+    padding: 0.1rem;
+}
+
+form textarea {
+    resize: none;
+}
+
+form input[type="reset"] {
+    padding: 0.5rem;
+}
+
+form input:invalid {
+    outline: 2px solid red;
+}
+
+form input[type="submit"] {
+    padding: 0.5rem;
+    background: #657b99;
+    color: #fff;
+}
+
+form input[type="reset"]:hover,
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
